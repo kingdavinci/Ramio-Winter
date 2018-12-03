@@ -12,7 +12,6 @@ public class PlayerMoveAndAnimate : MonoBehaviour
     float Jumping = 0;
     bool Launched = false;
     float LaunchTimer;
-
     public bool Running = false;
     public bool Idle = true;
 

@@ -15,6 +15,7 @@ public class EnemyScript : MonoBehaviour
     public Vector2 PatrolCenter;
     public float PatrolRange;
     int PatrolDirection = 1;
+    public bool Invincible = false;
 
     // Use this for initialization
     void Start()
