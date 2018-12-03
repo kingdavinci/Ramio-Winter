@@ -17,4 +17,9 @@ public class MenuButtons : MonoBehaviour {
     {
         Application.Quit();
     }
+
+    public void ReturnToMain()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
