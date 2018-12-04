@@ -19,6 +19,8 @@ public class PlayerMoveAndAnimate : MonoBehaviour
     void Update()
     {
         float MoveX = Input.GetAxis("Horizontal");
+        float xRaw = Input.GetAxis("Horizontal");
+        GetComponent<Animator>().SetFloat("X", xRaw);
         Vector3 Velocity = GetComponent<Rigidbody2D>().velocity;
         Jumping -= Time.deltaTime;
         LaunchTimer -= Time.deltaTime;
@@ -56,7 +58,7 @@ public class PlayerMoveAndAnimate : MonoBehaviour
         else
         if (MoveX == 1)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            //GetComponent<SpriteRenderer>().flipX = false;
             GetComponent<Animator>().SetBool("Jumping", false);
             GetComponent<Animator>().SetBool("Running", true);
             GetComponent<Animator>().SetBool("Idle", false);
@@ -64,7 +66,7 @@ public class PlayerMoveAndAnimate : MonoBehaviour
         else
         if (MoveX == -1)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            //GetComponent<SpriteRenderer>().flipX = true;
             GetComponent<Animator>().SetBool("Jumping", false);
             GetComponent<Animator>().SetBool("Running", true);
             GetComponent<Animator>().SetBool("Idle", false);
