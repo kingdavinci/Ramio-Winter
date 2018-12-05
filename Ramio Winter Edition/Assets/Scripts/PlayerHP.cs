@@ -71,5 +71,11 @@ public class PlayerHP : MonoBehaviour {
             healthText.GetComponent<Text>().text = "Health: " + hp;
             healthBar.GetComponent<Slider>().value = hp;
         }
+        if (collision.gameObject.tag == "Icicles")
+        {
+            hp -= 1;
+            healthText.GetComponent<Text>().text = "Health: " + hp;
+            healthBar.GetComponent<Slider>().value = hp;
+        }
     }
 }

@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 10
-  JumpSpeed: 10
+  JumpSpeed: 12
   Running: 0
   Idle: 1
 --- !u!198 &198696764709322078
