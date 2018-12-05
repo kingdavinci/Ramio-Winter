@@ -1855,19 +1855,6 @@ Prefab:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 430626037}
-    - target: {fileID: 4012923738644656, guid: 23109d90480551044a6cb17c94338e57, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 3.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 4012923738644656, guid: 23109d90480551044a6cb17c94338e57, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -3.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 198696764709322078, guid: 23109d90480551044a6cb17c94338e57,
-        type: 2}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23109d90480551044a6cb17c94338e57, type: 2}
   m_IsPrefabAsset: 0
