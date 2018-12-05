@@ -96,7 +96,7 @@ public class PlayerMoveAndAnimate : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(collision.gameObject.GetComponent<Launcher>().Force.x, collision.gameObject.GetComponent<Launcher>().Force.y));
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-            GetComponent<PlayerLife>().Health -= collision.gameObject.GetComponent<Launcher>().Damage;
+            GetComponent<PlayerHP>().hp -= collision.gameObject.GetComponent<Launcher>().Damage;
             Launched = true;
             LaunchTimer = collision.gameObject.GetComponent<Launcher>().Stun;
         }
