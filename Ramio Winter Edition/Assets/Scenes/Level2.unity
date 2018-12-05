@@ -193,9 +193,25 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114639058796974988, guid: 23109d90480551044a6cb17c94338e57,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1302842184}
+    - target: {fileID: 114639058796974988, guid: 23109d90480551044a6cb17c94338e57,
+        type: 2}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 1594547368}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23109d90480551044a6cb17c94338e57, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1302842184 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114329977633852858, guid: a732a6f5bfa98b24e9f0b5cb63f945f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1371537803}
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1371537803
 Prefab:
   m_ObjectHideFlags: 0
@@ -301,6 +317,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a732a6f5bfa98b24e9f0b5cb63f945f3, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1594547368 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114882128657520188, guid: a732a6f5bfa98b24e9f0b5cb63f945f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1371537803}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1840725709
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +396,7 @@ GameObject:
   - component: {fileID: 1893576339}
   - component: {fileID: 1893576338}
   - component: {fileID: 1893576337}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
