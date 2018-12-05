@@ -5,8 +5,7 @@ using UnityEngine;
 public class SnowballSpawner : MonoBehaviour {
 
     public GameObject Snowball;
-    public Vector2 ThrowDirection = new Vector2();
-    float ThrowDelay = 5;
+    float ThrowDelay = 2;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +18,7 @@ public class SnowballSpawner : MonoBehaviour {
         if(ThrowDelay <= 0)
         {
             Instantiate(Snowball, transform.position, Quaternion.identity);
+            ThrowDelay = 2;
         }
 	}
 }
