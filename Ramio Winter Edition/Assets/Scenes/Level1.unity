@@ -1855,6 +1855,59 @@ Prefab:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 430626037}
+    - target: {fileID: 198696764709322078, guid: 23109d90480551044a6cb17c94338e57,
+        type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 21.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012923738644656, guid: 23109d90480551044a6cb17c94338e57, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012923738644656, guid: 23109d90480551044a6cb17c94338e57, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.65344673
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012923738644656, guid: 23109d90480551044a6cb17c94338e57, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.27019888
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012923738644656, guid: 23109d90480551044a6cb17c94338e57, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.65344673
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012923738644656, guid: 23109d90480551044a6cb17c94338e57, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.27019888
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012923738644656, guid: 23109d90480551044a6cb17c94338e57, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 135.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 198696764709322078, guid: 23109d90480551044a6cb17c94338e57,
+        type: 2}
+      propertyPath: ShapeModule.angle
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 198696764709322078, guid: 23109d90480551044a6cb17c94338e57,
+        type: 2}
+      propertyPath: InitialModule.maxNumParticles
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012923738644656, guid: 23109d90480551044a6cb17c94338e57, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198696764709322078, guid: 23109d90480551044a6cb17c94338e57,
+        type: 2}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198696764709322078, guid: 23109d90480551044a6cb17c94338e57,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23109d90480551044a6cb17c94338e57, type: 2}
   m_IsPrefabAsset: 0

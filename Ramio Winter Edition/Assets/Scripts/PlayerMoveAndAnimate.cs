@@ -19,8 +19,11 @@ public class PlayerMoveAndAnimate : MonoBehaviour
     void Update()
     {
         float MoveX = Input.GetAxis("Horizontal");
-        float xRaw = Input.GetAxis("Horizontal");
-        GetComponent<Animator>().SetFloat("X", xRaw);
+        float xRaw = Input.GetAxisRaw("Horizontal");
+        if (xRaw != 0)
+        {
+            GetComponent<Animator>().SetFloat("X", xRaw);
+        }
         Vector3 Velocity = GetComponent<Rigidbody2D>().velocity;
         Jumping -= Time.deltaTime;
         LaunchTimer -= Time.deltaTime;
