@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1666689346833200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.33, y: -1.05, z: 0}
+  m_LocalPosition: {x: 3.719574, y: -3.2809844, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -90,6 +90,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ThrowDirection: {x: -20, y: 5}
+  Poof: {fileID: 1646676231999874, guid: b149defedc584a5428ee4561b5669aaa, type: 2}
+  Lifetime: 3.5
 --- !u!212 &212473019632206790
 SpriteRenderer:
   m_ObjectHideFlags: 1
