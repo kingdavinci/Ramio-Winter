@@ -137,11 +137,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 228549311}
   m_LocalRotation: {x: 0.27685654, y: 0.6506539, z: -0.27685654, w: 0.6506539}
-  m_LocalPosition: {x: -585.3, y: -257.1, z: -10}
+  m_LocalPosition: {x: -11.299988, y: 7.769989, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1177389390}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 46.1, y: 90, z: 0}
 --- !u!199 &228549313
 ParticleSystemRenderer:
@@ -211,7 +211,7 @@ ParticleSystem:
   simulationSpeed: 1
   stopAction: 0
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -4763,7 +4763,7 @@ RectTransform:
   m_Children:
   - {fileID: 1569872345}
   m_Father: {fileID: 1177389390}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5025,7 +5025,7 @@ RectTransform:
   m_Children:
   - {fileID: 1749095472}
   m_Father: {fileID: 1177389390}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5215,7 +5215,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 228549312}
   - {fileID: 1116520368}
   - {fileID: 279027282}
   m_Father: {fileID: 0}
