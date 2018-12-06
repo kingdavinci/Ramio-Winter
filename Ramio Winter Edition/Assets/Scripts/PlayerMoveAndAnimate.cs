@@ -74,11 +74,6 @@ public class PlayerMoveAndAnimate : MonoBehaviour
             GetComponent<Animator>().SetBool("Running", true);
             GetComponent<Animator>().SetBool("Idle", false);
         }
-
-
-
-
-
     }
 
     void OnTriggerEnter2D(Collider2D collision)

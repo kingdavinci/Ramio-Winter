@@ -6,7 +6,7 @@ public class SnowballScript : MonoBehaviour {
 
     public Vector2 ThrowDirection = new Vector2();
     public GameObject Poof;
-    public float Lifetime = 3.5f;
+    public float Lifetime = 4f;
 
 	// Use this for initialization
 	void Start () {
