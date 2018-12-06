@@ -7,6 +7,8 @@ TagManager:
   - Bullet
   - Enemy
   - Icicles
+  - FruitCake
+  - Fruitbullet
   layers:
   - Default
   - TransparentFX
