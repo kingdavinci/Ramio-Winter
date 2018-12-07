@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50390319540554770}
   - component: {fileID: 58173453703936846}
   - component: {fileID: 114402543609699724}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RightArcSnowball
   m_TagString: Bullet
   m_Icon: {fileID: 0}

@@ -10,6 +10,7 @@ TagManager:
   - FruitCake
   - Fruitbullet
   - Snow
+  - MedKit
   layers:
   - Default
   - TransparentFX
@@ -22,9 +23,9 @@ TagManager:
   - Grounded
   - Fruitbullet
   - Player
-  - 
-  - 
-  - 
+  - Snowball
+  - Enemy
+  - MedKit
   - 
   - 
   - 

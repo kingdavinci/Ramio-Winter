@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50226427675077330}
   - component: {fileID: 58013143270256086}
   - component: {fileID: 114461389522720914}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FastLeftSnowball
   m_TagString: Bullet
   m_Icon: {fileID: 0}

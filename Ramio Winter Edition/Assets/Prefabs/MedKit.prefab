@@ -9,95 +9,59 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1611974914905692}
+  m_RootGameObject: {fileID: 1997339377006580}
   m_IsPrefabAsset: 1
---- !u!1 &1611974914905692
+--- !u!1 &1997339377006580
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4517256919474922}
-  - component: {fileID: 212787774919391944}
-  - component: {fileID: 50567412511415010}
-  - component: {fileID: 58728607983310422}
-  - component: {fileID: 114918307965260168}
-  m_Layer: 11
-  m_Name: LeftArcSnowball
-  m_TagString: Bullet
+  - component: {fileID: 4038008023269256}
+  - component: {fileID: 212124323446503744}
+  - component: {fileID: 58870221794649800}
+  m_Layer: 13
+  m_Name: MedKit
+  m_TagString: MedKit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4517256919474922
+--- !u!4 &4038008023269256
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1611974914905692}
+  m_GameObject: {fileID: 1997339377006580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9352627, y: -0.46725732, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalPosition: {x: 138.5, y: 25, z: -0.44748223}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50567412511415010
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1611974914905692}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &58728607983310422
+--- !u!58 &58870221794649800
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1611974914905692}
+  m_GameObject: {fileID: 1997339377006580}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0016959757, y: 0.013566732}
   serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &114918307965260168
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1611974914905692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f7e950d6b3219d42ac955c32be56a81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ThrowDirection: {x: -10, y: 10}
-  Poof: {fileID: 1646676231999874, guid: b149defedc584a5428ee4561b5669aaa, type: 2}
-  Lifetime: 3.5
---- !u!212 &212787774919391944
+  m_Radius: 0.10742916
+--- !u!212 &212124323446503744
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1611974914905692}
+  m_GameObject: {fileID: 1997339377006580}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -127,12 +91,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 16223d1290a16d2469e876d303aab599, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 62da7e36a6f8e8546b47a0e84b9d8388, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.2, y: 0.2}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
