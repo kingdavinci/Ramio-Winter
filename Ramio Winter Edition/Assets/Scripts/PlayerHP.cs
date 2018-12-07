@@ -107,6 +107,7 @@ public class PlayerHP : MonoBehaviour {
         {
             fruitcake = true;
             Destroy(collision.gameObject);
+            timer2 = 0;
         }
     }
 }
