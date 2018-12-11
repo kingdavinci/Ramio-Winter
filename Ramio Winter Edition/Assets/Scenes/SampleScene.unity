@@ -1246,7 +1246,7 @@ GameObject:
   - component: {fileID: 852144764}
   - component: {fileID: 852144762}
   m_Layer: 0
-  m_Name: RammingCloud
+  m_Name: FollowingCloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1328,7 +1328,7 @@ MonoBehaviour:
   Type: 2
   Damage: 1
   Knockback: 0
-  Speed: 0
+  Speed: 5
   JumpSpeed: 0
   Player: {fileID: 0}
   Grounded: 0

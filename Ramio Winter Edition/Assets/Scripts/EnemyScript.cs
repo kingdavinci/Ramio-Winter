@@ -62,9 +62,9 @@ public class EnemyScript : MonoBehaviour
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-5, 6), 0));
             }
 
-            if (((Player.transform.position.y + 5) - transform.position.y) > 1 || ((Player.transform.position.y + 5) - transform.position.y) < -1)
+            if (((Player.transform.position.y + 10) - transform.position.y) > 1 || ((Player.transform.position.y + 10) - transform.position.y) < -1)
             {
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, ((Player.transform.position.y + 5) - transform.position.y) - (Velocity.y * 2)) * Speed);
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, ((Player.transform.position.y + 10) - transform.position.y) - (Velocity.y * 2)) * Speed);
             }
             else
             {

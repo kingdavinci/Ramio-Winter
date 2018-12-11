@@ -26,7 +26,6 @@ public class PlayerHP : MonoBehaviour {
         healthText.GetComponent<Text>().text = "Health: " + hp;
         healthBar.GetComponent<Slider>().value = hp;
         timerText.GetComponent<Text>().text = "time:" + Mathf.RoundToInt(timer);
-        hp = 25;
 	}
     void Update() {
         timer -= Time.deltaTime;
