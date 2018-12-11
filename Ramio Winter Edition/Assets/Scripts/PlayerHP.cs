@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class PlayerHP : MonoBehaviour {
 
-    public float hp = 25;
+    public float hp = 10;
     public int lives = 3;
     public Text healthText;
     public Slider healthBar;
@@ -26,6 +26,7 @@ public class PlayerHP : MonoBehaviour {
         healthText.GetComponent<Text>().text = "Health: " + hp;
         healthBar.GetComponent<Slider>().value = hp;
         timerText.GetComponent<Text>().text = "time:" + Mathf.RoundToInt(timer);
+        hp = 10;
 	}
     void Update() {
         timer -= Time.deltaTime;
@@ -38,14 +39,14 @@ public class PlayerHP : MonoBehaviour {
         if (timer <= 0.0f)
         {
             PlayerPrefs.SetInt("Lives", lives - 1);
-            //Time.timeScale = 0;
-            //DeathScreen.GetComponent<Canvas>().enabled = true;
+            Time.timeScale = 0;
+            DeathScreen.GetComponent<Canvas>().enabled = true;
         }
         if (hp <= 0)
         {
             PlayerPrefs.SetInt("Lives", lives - 1);
-            //Time.timeScale = 0;
-            //DeathScreen.GetComponent<Canvas>().enabled = true;
+            Time.timeScale = 0;
+            DeathScreen.GetComponent<Canvas>().enabled = true;
         }
         if (fruitcake == true && Input.GetMouseButtonDown(0))
         {
