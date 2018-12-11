@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 
 public class PlayerHP : MonoBehaviour {
+
     public float hp = 25;
     public int lives = 3;
     public Text healthText;
@@ -16,6 +17,8 @@ public class PlayerHP : MonoBehaviour {
     public GameObject prefab;
     public float shootSpeed = 10;
     public bool fruitcake = false;
+    public GameObject DeathScreen;
+
     // Use this for initialization
     void Start () {
         //PlayerPrefs.SetInt("Lives", lives);
@@ -35,12 +38,12 @@ public class PlayerHP : MonoBehaviour {
         if (timer <= 0.0f)
         {
             PlayerPrefs.SetInt("Lives", lives - 1);
-            SceneManager.LoadScene("Lose");
+            DeathScreen.GetComponent<Canvas>().enabled = true;
         }
         if (hp <= 0)
         {
             PlayerPrefs.SetInt("Lives", lives - 1);
-            SceneManager.LoadScene("Lose");
+            DeathScreen.GetComponent<Canvas>().enabled = true;
         }
         if (fruitcake == true && Input.GetMouseButtonDown(0))
         {
