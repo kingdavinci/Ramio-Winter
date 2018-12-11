@@ -53,7 +53,7 @@ public class EnemyScript : MonoBehaviour
 
         if (Type == 2)
         {
-            if ((Player.transform.position - transform.position).x > 5 || (Player.transform.position - transform.position).x < -5)
+            if ((Player.transform.position - transform.position).x > 1 || (Player.transform.position - transform.position).x < -1)
             {
                 GetComponent<Rigidbody2D>().AddForce(new Vector2((Player.transform.position - transform.position).x - (Velocity.x * 2), 0) * Speed);
             }

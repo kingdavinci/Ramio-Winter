@@ -38,12 +38,14 @@ public class PlayerHP : MonoBehaviour {
         if (timer <= 0.0f)
         {
             PlayerPrefs.SetInt("Lives", lives - 1);
-            DeathScreen.GetComponent<Canvas>().enabled = true;
+            //Time.timeScale = 0;
+            //DeathScreen.GetComponent<Canvas>().enabled = true;
         }
         if (hp <= 0)
         {
             PlayerPrefs.SetInt("Lives", lives - 1);
-            DeathScreen.GetComponent<Canvas>().enabled = true;
+            //Time.timeScale = 0;
+            //DeathScreen.GetComponent<Canvas>().enabled = true;
         }
         if (fruitcake == true && Input.GetMouseButtonDown(0))
         {
