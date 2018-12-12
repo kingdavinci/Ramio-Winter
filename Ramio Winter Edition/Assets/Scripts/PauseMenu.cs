@@ -1,29 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        Time.timeScale = 1;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//check to see if the p key is pressed
-        if(Input.GetKeyDown(KeyCode.P))
+
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
-            //if it is pressed, stop stuff from moving
             if (Time.timeScale == 1)
             {
                 Time.timeScale = 0;
-                //and make the pause menu visible
-                //tell canvas to be on
                 GetComponent<Canvas>().enabled = true;
             }else if(Time.timeScale == 0)
             {
-                //unpause
                 Resume();
             }
         }
@@ -33,8 +30,8 @@ public class PauseMenu : MonoBehaviour {
         Time.timeScale = 1;
         GetComponent<Canvas>().enabled = false;
     }
-    public void QuitGame()
+    public void Return()
     {
-        Application.Quit();
+        SceneManager.LoadScene("MainMenu");
     }
 }
