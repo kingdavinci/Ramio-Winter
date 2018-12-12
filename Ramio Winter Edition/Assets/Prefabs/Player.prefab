@@ -100,7 +100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222454985608674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.74, y: -1.39, z: 0}
+  m_LocalPosition: {x: -3.46, y: -1.438, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4666406957239730}
@@ -205,8 +205,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.012860156, y: 0}
-  m_Size: {x: 0.48559466, y: 1}
+  m_Offset: {x: 0.0068252566, y: -0.014741135}
+  m_Size: {x: 0.5124573, y: 0.97051775}
   m_Direction: 0
 --- !u!81 &81684348014788694
 AudioListener:
@@ -252,8 +252,9 @@ MonoBehaviour:
   timer2: 0
   timerText: {fileID: 0}
   prefab: {fileID: 1610250898980778, guid: 4f7bf4166d42c424ab12936ce905819c, type: 2}
-  shootSpeed: 10
+  shootSpeed: 30
   fruitcake: 0
+  DeathScreen: {fileID: 0}
 --- !u!114 &114743753251689296
 MonoBehaviour:
   m_ObjectHideFlags: 1

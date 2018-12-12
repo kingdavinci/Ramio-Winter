@@ -1360,11 +1360,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4866018476910496, guid: 23109d90480551044a6cb17c94338e57, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.46
+      value: -3.46
       objectReference: {fileID: 0}
     - target: {fileID: 4866018476910496, guid: 23109d90480551044a6cb17c94338e57, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.39
+      value: -1.438
       objectReference: {fileID: 0}
     - target: {fileID: 4866018476910496, guid: 23109d90480551044a6cb17c94338e57, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1392,67 +1392,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114639058796974988, guid: 23109d90480551044a6cb17c94338e57,
         type: 2}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 1302842184}
-    - target: {fileID: 114639058796974988, guid: 23109d90480551044a6cb17c94338e57,
-        type: 2}
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1594547368}
     - target: {fileID: 114639058796974988, guid: 23109d90480551044a6cb17c94338e57,
         type: 2}
-      propertyPath: prefab
+      propertyPath: healthBar
       value: 
-      objectReference: {fileID: 1610250898980778, guid: 4f7bf4166d42c424ab12936ce905819c,
-        type: 2}
-    - target: {fileID: 114639058796974988, guid: 23109d90480551044a6cb17c94338e57,
-        type: 2}
-      propertyPath: fruitcake
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1302842184}
     - target: {fileID: 114639058796974988, guid: 23109d90480551044a6cb17c94338e57,
         type: 2}
       propertyPath: timerText
       value: 
       objectReference: {fileID: 480058086}
-    - target: {fileID: 114639058796974988, guid: 23109d90480551044a6cb17c94338e57,
-        type: 2}
-      propertyPath: shootSpeed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1222454985608674, guid: 23109d90480551044a6cb17c94338e57, type: 2}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1072415967509432, guid: 23109d90480551044a6cb17c94338e57, type: 2}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1515016680370264, guid: 23109d90480551044a6cb17c94338e57, type: 2}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 70492979766638612, guid: 23109d90480551044a6cb17c94338e57,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.0068252566
-      objectReference: {fileID: 0}
-    - target: {fileID: 70492979766638612, guid: 23109d90480551044a6cb17c94338e57,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.5124573
-      objectReference: {fileID: 0}
-    - target: {fileID: 70492979766638612, guid: 23109d90480551044a6cb17c94338e57,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.014741135
-      objectReference: {fileID: 0}
-    - target: {fileID: 70492979766638612, guid: 23109d90480551044a6cb17c94338e57,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.97051775
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23109d90480551044a6cb17c94338e57, type: 2}
   m_IsPrefabAsset: 0
