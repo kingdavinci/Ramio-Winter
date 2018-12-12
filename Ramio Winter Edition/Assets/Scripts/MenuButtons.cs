@@ -7,23 +7,7 @@ public class MenuButtons : MonoBehaviour
 {
     void Update()
     {
-        // check to see if p key is pressed
-        if (Input.GetKeyDown(KeyCode.P))
-        {
 
-            //if is pressed stop stuff from moving
-            if (Time.timeScale == 1)
-            {
-                Time.timeScale = 0;
-                //make pause menu visible
-                GetComponent<Canvas>().enabled = true;
-            }
-            else if (Time.timeScale == 0)
-            {
-                //unpause
-                Resume();
-            }
-        }
     }
 
     public void NewGame()
@@ -43,10 +27,9 @@ public class MenuButtons : MonoBehaviour
     }
 
     public void Retry()
-    {
+    { 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
-
     }
 
 }
