@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114689290364104634}
   - component: {fileID: 114305473685472704}
   - component: {fileID: 70446018062290656}
+  - component: {fileID: 114247792318784236}
   m_Layer: 15
   m_Name: FollowingCloud
   m_TagString: Untagged
@@ -79,6 +80,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0.019172868, y: 0.04880355}
   m_Size: {x: 0.78038734, y: 0.53288686}
   m_Direction: 1
+--- !u!114 &114247792318784236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627837437580112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60540c84115d6174e93f7927f11a174f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114305473685472704
 MonoBehaviour:
   m_ObjectHideFlags: 1
