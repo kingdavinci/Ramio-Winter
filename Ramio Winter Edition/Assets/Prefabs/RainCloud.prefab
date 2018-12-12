@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 114240279516847432}
   - component: {fileID: 50646794746229136}
   - component: {fileID: 114052952183799422}
-  m_Layer: 12
+  - component: {fileID: 70320020094875992}
+  m_Layer: 15
   m_Name: RainCloud
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1532174664671910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.150135, y: 19.262716, z: -0.3647542}
+  m_LocalPosition: {x: 77.19073, y: 24.430962, z: -0.3647542}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,6 +64,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!70 &70320020094875992
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532174664671910}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.036581885, y: 0.04703816}
+  m_Size: {x: 0.7735249, y: 0.5296339}
+  m_Direction: 1
 --- !u!114 &114052952183799422
 MonoBehaviour:
   m_ObjectHideFlags: 1

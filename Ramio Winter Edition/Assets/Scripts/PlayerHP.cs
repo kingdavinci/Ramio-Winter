@@ -18,7 +18,9 @@ public class PlayerHP : MonoBehaviour {
     public float shootSpeed = 10;
     public bool fruitcake = false;
     public GameObject DeathScreen;
-
+    public bool candycane = false;
+    public GameObject prefab2;
+    public float timer3 = 0;
     // Use this for initialization
     void Start () {
         //PlayerPrefs.SetInt("Lives", lives);
@@ -31,9 +33,15 @@ public class PlayerHP : MonoBehaviour {
     void Update() {
         timer -= Time.deltaTime;
         timer2 += Time.deltaTime;
+        timer3 += Time.deltaTime;
         if (timer2 >= 15)
         {
             fruitcake = false;
+        }
+        timerText.GetComponent<Text>().text = "time:" + Mathf.RoundToInt(timer);
+        if (timer3 >= 15)
+        {
+            candycane = false;
         }
         timerText.GetComponent<Text>().text = "time:" + Mathf.RoundToInt(timer);
         if (timer <= 0.0f)
@@ -61,6 +69,23 @@ public class PlayerHP : MonoBehaviour {
             offset = offset * 0.3f;
             shootDir = shootDir * shootSpeed;
             GameObject bullet = (GameObject)Instantiate(prefab,
+               transform.position + offset, Quaternion.identity);
+            bullet.GetComponent<Rigidbody2D>().velocity = shootDir;
+            Destroy(bullet, 0.5f);
+        }
+        if (candycane == true && Input.GetMouseButtonDown(0))
+        {
+            var mousePosition = Input.mousePosition;
+            Debug.Log("X is " + mousePosition.x + " and y is " + mousePosition.y + " and z is " + mousePosition.z);
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            Debug.Log("X is " + mousePosition.x + " and y is " + mousePosition.y + " and z is " + mousePosition.z);
+            mousePosition.z = 0;
+            Vector3 shootDir = mousePosition - transform.position;
+            shootDir.Normalize();
+            Vector3 offset = shootDir;
+            offset = offset * 0.3f;
+            shootDir = shootDir * shootSpeed;
+            GameObject bullet = (GameObject)Instantiate(prefab2,
                transform.position + offset, Quaternion.identity);
             bullet.GetComponent<Rigidbody2D>().velocity = shootDir;
             Destroy(bullet, 0.5f);
@@ -112,6 +137,12 @@ public class PlayerHP : MonoBehaviour {
         if (collision.gameObject.tag == "FruitCake")
         {
             fruitcake = true;
+            Destroy(collision.gameObject);
+            timer2 = 0;
+        }
+        if (collision.gameObject.tag == "CandyCane")
+        {
+            candycane = true;
             Destroy(collision.gameObject);
             timer2 = 0;
         }

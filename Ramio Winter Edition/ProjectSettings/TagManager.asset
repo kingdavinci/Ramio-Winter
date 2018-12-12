@@ -12,6 +12,7 @@ TagManager:
   - Snow
   - MedKit
   - CandyCane
+  - CloudDestroy
   layers:
   - Default
   - TransparentFX
@@ -27,8 +28,8 @@ TagManager:
   - Snowball
   - Enemy
   - MedKit
-  - 
-  - 
+  - CloudDestroy
+  - Cloud
   - 
   - 
   - 
