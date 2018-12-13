@@ -17,14 +17,14 @@ public class RaindropScript : MonoBehaviour {
         Lifetime -= Time.deltaTime;
         if (Lifetime <= 0)
         {
-            Instantiate(Splash, transform.position, Quaternion.identity);
+            Instantiate(Splash, transform.position, Quaternion.Euler(-90, 0, 0));
             Destroy(gameObject);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(Splash, transform.position, Quaternion.identity);
+        Instantiate(Splash, transform.position, Quaternion.Euler(-90, 0, 0));
         Destroy(gameObject);
     }
 }
