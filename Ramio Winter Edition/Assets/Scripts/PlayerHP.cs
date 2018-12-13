@@ -185,12 +185,12 @@ public class PlayerHP : MonoBehaviour {
             hp -= 1;
             healthText.GetComponent<Text>().text = "Health: " + hp;
             healthBar.GetComponent<Slider>().value = hp;
-            water = true;
         }
 
         if (collision.gameObject.tag == "Water")
         {
             GetComponent<Rigidbody2D>().gravityScale = 0;
+            water = true;
         }
     }
 
@@ -199,6 +199,7 @@ public class PlayerHP : MonoBehaviour {
         if(collision.gameObject.tag == "Water")
         {
             GetComponent<Rigidbody2D>().gravityScale = 4;
+            water = false;
         }
     }
 }
