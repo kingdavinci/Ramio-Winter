@@ -21,6 +21,8 @@ public class PlayerHP : MonoBehaviour {
     public bool candycane = false;
     public GameObject prefab2;
     public float timer3 = 0;
+    public Text livesText;
+    
     // Use this for initialization
     void Start () {
         //PlayerPrefs.SetInt("Lives", lives);
@@ -29,7 +31,9 @@ public class PlayerHP : MonoBehaviour {
         healthBar.GetComponent<Slider>().value = hp;
         timerText.GetComponent<Text>().text = "time:" + Mathf.RoundToInt(timer);
         hp = 10;
-	}
+        livesText.GetComponent<Text>().text = "Lives: " + lives;
+        
+    }
     void Update() {
         timer -= Time.deltaTime;
         timer2 += Time.deltaTime;
@@ -89,6 +93,12 @@ public class PlayerHP : MonoBehaviour {
                transform.position + offset, Quaternion.identity);
             bullet.GetComponent<Rigidbody2D>().velocity = shootDir;
             Destroy(bullet, 0.5f);
+        }
+        if ( lives <= 0 )
+        {
+            PlayerPrefs.SetInt("Lives", lives = 3);
+            Time.timeScale = 1;
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
