@@ -109,6 +109,8 @@ public class PlayerHP : MonoBehaviour {
         {
             hp -= 1;
             timer4 = 0;
+            healthText.GetComponent<Text>().text = "Health: " + hp;
+            healthBar.GetComponent<Slider>().value = hp;
         }
     }
 
@@ -157,12 +159,14 @@ public class PlayerHP : MonoBehaviour {
         if (collision.gameObject.tag == "FruitCake")
         {
             fruitcake = true;
+            candycane = false;
             Destroy(collision.gameObject);
             timer2 = 0;
         }
         if (collision.gameObject.tag == "CandyCane")
         {
             candycane = true;
+            fruitcake = false;
             Destroy(collision.gameObject);
             timer3 = 0;
         }
