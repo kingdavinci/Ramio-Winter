@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BulletHP : MonoBehaviour {
 
-    public int hp = 1;
 	// Use this for initialization
 	void Start () {
 		
@@ -16,21 +15,9 @@ public class BulletHP : MonoBehaviour {
 	}
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        if (collision.gameObject.layer == 8 || collision.gameObject.tag == "Player")
         {
-            hp--;
-            if (hp <= 0)
-            {
                 Destroy(gameObject);
-            }
-        }
-        if (collision.gameObject.tag == "Player")
-        {
-            hp--;
-            if (hp <= 0)
-            {
-                Destroy(gameObject);
-            }
         }
     }
 }
