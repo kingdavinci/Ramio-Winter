@@ -187,5 +187,18 @@ public class PlayerHP : MonoBehaviour {
             healthBar.GetComponent<Slider>().value = hp;
             water = true;
         }
+
+        if (collision.gameObject.tag == "Water")
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Water")
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 4;
+        }
     }
 }
