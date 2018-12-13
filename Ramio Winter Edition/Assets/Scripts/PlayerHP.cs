@@ -22,6 +22,8 @@ public class PlayerHP : MonoBehaviour {
     public GameObject prefab2;
     public float timer3 = 0;
     public Text livesText;
+    public float timer4 = 0;
+    public bool water = false;
     
     // Use this for initialization
     void Start () {
@@ -38,6 +40,7 @@ public class PlayerHP : MonoBehaviour {
         timer -= Time.deltaTime;
         timer2 += Time.deltaTime;
         timer3 += Time.deltaTime;
+        timer4 += Time.deltaTime;
         if (timer2 >= 15)
         {
             fruitcake = false;
@@ -102,6 +105,11 @@ public class PlayerHP : MonoBehaviour {
             Time.timeScale = 1;
             SceneManager.LoadScene("Lose");
         }
+        if (water == true && timer4 >= 7)
+        {
+            hp -= 1;
+            timer4 = 0;
+        }
     }
 
         void OnCollisionEnter2D(Collision2D collision)
@@ -158,14 +166,26 @@ public class PlayerHP : MonoBehaviour {
             Destroy(collision.gameObject);
             timer3 = 0;
         }
+        if (collision.gameObject.tag == "Water")
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+        }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Water")
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 4;
+        }
+    }
+        private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
         {
             hp -= 1;
             healthText.GetComponent<Text>().text = "Health: " + hp;
             healthBar.GetComponent<Slider>().value = hp;
+            water = true;
         }
     }
 }
