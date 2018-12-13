@@ -10,5 +10,9 @@ public class Cloud : MonoBehaviour {
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "Water")
+        {
+            Destroy(gameObject);
+        }
 	}
 }
