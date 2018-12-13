@@ -58,6 +58,7 @@ public class PlayerHP : MonoBehaviour {
         }
         if (fruitcake == true && Input.GetMouseButtonDown(0))
         {
+            candycane = false;
             var mousePosition = Input.mousePosition;
             Debug.Log("X is " + mousePosition.x + " and y is " + mousePosition.y + " and z is " + mousePosition.z);
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
@@ -75,6 +76,7 @@ public class PlayerHP : MonoBehaviour {
         }
         if (candycane == true && Input.GetMouseButtonDown(0))
         {
+            fruitcake = false;
             var mousePosition = Input.mousePosition;
             Debug.Log("X is " + mousePosition.x + " and y is " + mousePosition.y + " and z is " + mousePosition.z);
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
@@ -144,7 +146,7 @@ public class PlayerHP : MonoBehaviour {
         {
             candycane = true;
             Destroy(collision.gameObject);
-            timer2 = 0;
+            timer3 = 0;
         }
     }
 }
