@@ -1806,6 +1806,7 @@ MonoBehaviour:
   candycane: 0
   prefab2: {fileID: 0}
   timer3: 0
+  livesText: {fileID: 0}
 --- !u!212 &1278206017
 SpriteRenderer:
   m_ObjectHideFlags: 0

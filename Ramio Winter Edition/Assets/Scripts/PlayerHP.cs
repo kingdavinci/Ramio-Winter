@@ -100,7 +100,7 @@ public class PlayerHP : MonoBehaviour {
         {
             PlayerPrefs.SetInt("Lives", lives = 3);
             Time.timeScale = 1;
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("Lose");
         }
     }
 
@@ -157,6 +157,15 @@ public class PlayerHP : MonoBehaviour {
             candycane = true;
             Destroy(collision.gameObject);
             timer3 = 0;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Bullet")
+        {
+            hp -= 1;
+            healthText.GetComponent<Text>().text = "Health: " + hp;
+            healthBar.GetComponent<Slider>().value = hp;
         }
     }
 }
