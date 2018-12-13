@@ -22,8 +22,7 @@ GameObject:
   - component: {fileID: 212734097911050956}
   - component: {fileID: 50903904529724754}
   - component: {fileID: 70573008632897512}
-  - component: {fileID: 114044970655920886}
-  - component: {fileID: 114068284493349366}
+  - component: {fileID: 114469308775814578}
   m_Layer: 11
   m_Name: RainDrop
   m_TagString: Bullet
@@ -79,7 +78,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.02097167, y: 0.099615335}
   m_Size: {x: 0.39182237, y: 0.69591093}
   m_Direction: 0
---- !u!114 &114044970655920886
+--- !u!114 &114469308775814578
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,21 +86,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1461033683144844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b48700520666924f8de2669d931a5cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 06232202ad39bc045b11f4f8c2277dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114068284493349366
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1461033683144844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a102834f16fdce498937bda2ec26ff8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Life: 5
+  Splash: {fileID: 1961979380742024, guid: f0712d5f5de4a36449f864587816912c, type: 2}
+  Lifetime: 4
 --- !u!212 &212734097911050956
 SpriteRenderer:
   m_ObjectHideFlags: 1
