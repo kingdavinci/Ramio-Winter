@@ -18,7 +18,7 @@ public class FloatingScript : MonoBehaviour {
     {
         if(collision.gameObject.layer == 4)
         {
-            GetComponent<Rigidbody2D>().gravityScale = -1;
+            GetComponent<Rigidbody2D>().gravityScale /= -3;
         }
 
     }
@@ -27,7 +27,7 @@ public class FloatingScript : MonoBehaviour {
     {
         if (collision.gameObject.layer == 4)
         {
-            GetComponent<Rigidbody2D>().gravityScale = 1;
+            GetComponent<Rigidbody2D>().gravityScale *= -3;
         }
     }
 }
