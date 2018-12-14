@@ -18,7 +18,9 @@ public class SledScript : MonoBehaviour {
     {
         if(collision.gameObject.layer == 4)
         {
-            GetComponent<Rigidbody2D>().rotation = Mathf.Round(GetComponent<Rigidbody2D>().rotation * .1f);
+            //GetComponent<Rigidbody2D>().rotation = Mathf.Round(GetComponent<Rigidbody2D>().rotation * .1f);
+            GetComponent<Rigidbody2D>().rotation = 0;
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         }
     }
 }
