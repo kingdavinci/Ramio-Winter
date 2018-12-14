@@ -21,6 +21,7 @@ public class SledScript : MonoBehaviour {
             //GetComponent<Rigidbody2D>().rotation = Mathf.Round(GetComponent<Rigidbody2D>().rotation * .1f);
             GetComponent<Rigidbody2D>().rotation = 0;
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(3, 0);
         }
     }
 }
