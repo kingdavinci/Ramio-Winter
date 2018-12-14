@@ -14,6 +14,7 @@ public class PlayerMoveAndAnimate : MonoBehaviour
     float LaunchTimer;
     public bool Running = false;
     public bool Idle = true;
+    bool Submerged = false;
 
     // Update is called once per frame
     void Update()
@@ -31,7 +32,7 @@ public class PlayerMoveAndAnimate : MonoBehaviour
         {
             Launched = false;
         }
-        if (Time.timeScale == 1 && !Launched)
+        if (Time.timeScale == 1 && !Launched && !Submerged)
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2((MoveX * MoveSpeed * 4) - (Velocity.x * 2), 0));
         }
@@ -40,9 +41,13 @@ public class PlayerMoveAndAnimate : MonoBehaviour
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 50 * JumpSpeed));
             Jumping = .05f;
         }
-        if (Input.GetButton("Jump") && Jumping > 0 && Time.timeScale == 1 && !Launched)
+        if (Input.GetButton("Jump") && Jumping > 0 && Time.timeScale == 1 && !Launched && !Submerged)
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 15 * JumpSpeed));
+        }
+        if(Submerged)
+        {
+            GetComponent<Rigidbody2D>().AddForce(new Vector2((Input.GetAxis("Horizontal") * MoveSpeed * 4) - (Velocity.x * 2), (Input.GetAxis("Vertical") * MoveSpeed * 4) - (Velocity.y * 2)));
         }
 
         if (MoveX < 1 && MoveX > -1 && Grounded)
@@ -98,6 +103,10 @@ public class PlayerMoveAndAnimate : MonoBehaviour
             Launched = true;
             LaunchTimer = collision.gameObject.GetComponent<Launcher>().Stun;
         }
+        if(collision.gameObject.layer == 4)
+        {
+            Submerged = true;
+        }
     }
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -111,6 +120,10 @@ public class PlayerMoveAndAnimate : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             Grounded = false;
+        }
+        if (collision.gameObject.layer == 4)
+        {
+            Submerged = false;
         }
     }
 
