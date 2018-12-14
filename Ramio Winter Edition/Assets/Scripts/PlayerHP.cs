@@ -105,7 +105,7 @@ public class PlayerHP : MonoBehaviour {
             Time.timeScale = 1;
             SceneManager.LoadScene("Lose");
         }
-        if (water == true && timer4 >= 2.5f)
+        if (water == true && timer4 >= .5f)
         {
             hp -= 1;
             timer4 = 0;
