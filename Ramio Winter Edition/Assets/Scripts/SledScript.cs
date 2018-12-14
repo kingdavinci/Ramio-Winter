@@ -11,9 +11,14 @@ public class SledScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(GetComponent<Rigidbody2D>().rotation != 0)
+
+	}
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.gameObject.layer == 4)
         {
             GetComponent<Rigidbody2D>().rotation = Mathf.Round(GetComponent<Rigidbody2D>().rotation * .1f);
         }
-	}
+    }
 }
