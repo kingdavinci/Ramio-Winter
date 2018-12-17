@@ -23,9 +23,8 @@ GameObject:
   - component: {fileID: 61892479178771442}
   - component: {fileID: 61353016343679634}
   - component: {fileID: 61761081327597718}
-  - component: {fileID: 114559307942210324}
-  - component: {fileID: 114556131956937990}
   - component: {fileID: 50648740144857946}
+  - component: {fileID: 114263538083627274}
   m_Layer: 12
   m_Name: Santa
   m_TagString: Untagged
@@ -40,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1322138128542722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.88, y: -27.27, z: -0.021209715}
+  m_LocalPosition: {x: 14.881449, y: -0.30034065, z: -0.021209715}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,7 +64,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61353016343679634
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -141,7 +140,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25823948, y: 0.27095637}
   m_EdgeRadius: 0
---- !u!114 &114556131956937990
+--- !u!114 &114263538083627274
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,36 +148,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1322138128542722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ce67ef7c6272024d8d30d607cec7a6e, type: 3}
+  m_Script: {fileID: 11500000, guid: 794feb91e0b9a764281c72eee0805b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 1
-  Damage: 3
-  Knockback: 70
-  Speed: 5
-  JumpSpeed: 8
-  Player: {fileID: 0}
-  Grounded: 0
-  PatrolCenter: {x: 6, y: 0}
-  PatrolRange: 4
-  Invincible: 0
---- !u!114 &114559307942210324
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1322138128542722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd37863c37023944b84621b58cecdb3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 1666689346833200, guid: 74b3d881e44895f4ab8635b04df1eef7, type: 2}
-  player: {fileID: 0}
-  bulletSpeed: 20
-  shootDistance: 40
-  bulletLifetime: 1
-  shootDelay: 0.7
+  Snowball: {fileID: 1231443741725360, guid: 0e11e199c903f6e48869f2a895399f64, type: 2}
 --- !u!212 &212891321575356710
 SpriteRenderer:
   m_ObjectHideFlags: 1
