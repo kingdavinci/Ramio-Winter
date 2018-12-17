@@ -5,7 +5,7 @@ using UnityEngine;
 public class BossScript : MonoBehaviour {
 
     public GameObject Snowball;
-    float ThrowDelay = 2;
+    float ThrowDelay = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +18,7 @@ public class BossScript : MonoBehaviour {
         if(ThrowDelay <= 0)
         {
             Instantiate(Snowball, transform.position, Quaternion.identity);
-            ThrowDelay = 2;
+            ThrowDelay = 1;
         }
 	}
 }
