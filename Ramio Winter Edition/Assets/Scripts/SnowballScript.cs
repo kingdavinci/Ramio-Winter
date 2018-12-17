@@ -7,10 +7,20 @@ public class SnowballScript : MonoBehaviour {
     public Vector2 ThrowDirection = new Vector2();
     public GameObject Poof;
     public float Lifetime = 4f;
+    public bool Aimed = false;
 
 	// Use this for initialization
 	void Start () {
-        GetComponent<Rigidbody2D>().velocity = ThrowDirection;
+        if(Aimed)
+        {
+            Lifetime = 100;
+            GetComponent<Rigidbody2D>().AddForce(new Vector2((GameObject.FindGameObjectWithTag("Player").transform.position.normalized.x - transform.position.x) * 25, (GameObject.FindGameObjectWithTag("Player").transform.position.y - transform.position.y) - ((GameObject.FindGameObjectWithTag("Player").transform.position.x - transform.position.x) * .6f) * 50));
+                //new Vector2((GameObject.FindGameObjectWithTag("Player").transform.position.x - transform.position.x) * (GameObject.FindGameObjectWithTag("Player").transform.position.x - transform.position.x), ((GameObject.FindGameObjectWithTag("Player").transform.position.y - transform.position.y) * (GameObject.FindGameObjectWithTag("Player").transform.position.y - transform.position.y)));
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().velocity = ThrowDirection;
+        }
 	}
 	
 	// Update is called once per frame
