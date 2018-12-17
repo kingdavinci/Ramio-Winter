@@ -14,7 +14,11 @@ public class SnowballScript : MonoBehaviour {
         if(Aimed)
         {
             Lifetime = 100;
-            GetComponent<Rigidbody2D>().AddForce(new Vector2((GameObject.FindGameObjectWithTag("Player").transform.position.normalized.x - transform.position.x) * -(GameObject.FindGameObjectWithTag("Player").transform.position.normalized.x - transform.position.x) * 3.2f, (GameObject.FindGameObjectWithTag("Player").transform.position.y - transform.position.y) - ((GameObject.FindGameObjectWithTag("Player").transform.position.x - transform.position.x) * .3f) * 50));
+            float px = GameObject.FindGameObjectWithTag("Player").transform.position.x;
+            float py = GameObject.FindGameObjectWithTag("Player").transform.position.y;
+            float myX = transform.position.x;
+            GetComponent<Rigidbody2D>().AddForce(new Vector2((px - myX) * -(px - myX) * (0.7f),  500));
+            //GetComponent<Rigidbody2D>().AddForce(new Vector2((GameObject.FindGameObjectWithTag("Player").transform.position.normalized.x - transform.position.x) * -(GameObject.FindGameObjectWithTag("Player").transform.position.normalized.x - transform.position.x) * 3.2f, (GameObject.FindGameObjectWithTag("Player").transform.position.y - transform.position.y) - ((GameObject.FindGameObjectWithTag("Player").transform.position.x - transform.position.x) * .3f) * 50));
         }
         else
         {
