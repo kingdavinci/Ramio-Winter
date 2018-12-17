@@ -14,7 +14,7 @@ public class PlayerMoveAndAnimate : MonoBehaviour
     float LaunchTimer;
     public bool Running = false;
     public bool Idle = true;
-    bool Submerged = false;
+    public bool Submerged = false;
 
     // Update is called once per frame
     void Update()
@@ -114,6 +114,10 @@ public class PlayerMoveAndAnimate : MonoBehaviour
         {
             Grounded = true;
         }
+        if (collision.gameObject.layer == 4)
+        {
+            Submerged = true;
+        }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
@@ -123,6 +127,7 @@ public class PlayerMoveAndAnimate : MonoBehaviour
         }
         if (collision.gameObject.layer == 4)
         {
+            Debug.Log("leaving water");
             Submerged = false;
         }
     }

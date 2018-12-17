@@ -107,7 +107,7 @@ public class PlayerHP : MonoBehaviour {
         }
         if (water == true && timer4 >= .5f)
         {
-            hp -= 1;
+            hp -= 20;
             timer4 = 0;
             healthText.GetComponent<Text>().text = "Health: " + hp;
             healthBar.GetComponent<Slider>().value = hp;
